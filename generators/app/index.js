@@ -13,8 +13,8 @@ var turboGenerator = yeoman.generators.Base.extend({
 
         this.on('end', function () {
             if (!this.options['skip-install']) {
-                console.log("installDependencies" , __dirname)
-                this.installDependencies();
+                this.log(chalk.magenta('请安装依赖，然后启动项目! npm install & bower install'));
+                // this.installDependencies();
             }
         });
     },

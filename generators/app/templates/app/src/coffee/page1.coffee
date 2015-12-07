@@ -1,7 +1,7 @@
 require.config
     paths:
         jade: '../vender/runtime'
-        mainTpl:'tpl/page1'
+        mainTpl:'tpl/page1_body'
         mod1:'module/mod1'
 
 require ['jade','mainTpl'], (jade, tpl)->
