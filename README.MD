@@ -21,7 +21,13 @@
   2. 安装 generator:
     npm i --g generator-turbo
   3. 运行生成器
-    npm i --g generator-turbo
+
+    #创建项目根目录
+
+    mkdir myPorject
+    cd myPorject
+    yo turbo
+    
   4. 安装工程依赖(如果依赖没有被自动安装)
     npm install & bower install
   5. 执行gulp命令
