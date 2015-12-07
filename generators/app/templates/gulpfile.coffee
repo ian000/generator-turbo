@@ -4,7 +4,7 @@ requireDir = require 'require-dir'
 
 #your require should be  " turbo = require'gulp-turbo' "
 turbo       = require 'gulp-turbo'
-porjectConf = require './porject-conf.json'
+porjectConf = require './project-conf.json'
 
 #register into global
 global.globalGulp = gulp

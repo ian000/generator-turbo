@@ -9,7 +9,7 @@
 
   turbo = require('gulp-turbo');
 
-  porjectConf = require('./porject-conf.json');
+  porjectConf = require('./project-conf.json');
 
   global.globalGulp = gulp;
 
