@@ -1,4 +1,4 @@
-## generator-turbo
+## generator-turbo [![](https://img.shields.io/npm/v/generator-turbo.svg?style=flat)](https://www.npmjs.org/package/generator-turbo)  
 > 前端工程生成器 for turbo [![](https://img.shields.io/npm/v/gulp-turbo.svg?style=flat)](https://www.npmjs.org/package/gulp-turbo)  
 
 ### 前端工作流 功能说明
@@ -27,7 +27,7 @@
     mkdir myPorject
     cd myPorject
     yo turbo
-    
+
   4. 安装工程依赖(如果依赖没有被自动安装)
     npm install & bower install
   5. 执行gulp命令
