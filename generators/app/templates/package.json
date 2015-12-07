@@ -1,0 +1,21 @@
+{
+  "name": "<%= slugify(projectName) %>",
+  "version": "<%= version %>",
+  "repository":{
+    "type": "<%= repositoryType %>",
+    "url":"<%= repositoryUrl%>"
+  },
+  "description": "<%= description %>",
+  "main": "<%= main %>",
+  "author": {
+    "name": "<%= authorName %>",
+    "email":"<%= authorEmail %>"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "require-dir": "^0.3.0",
+    "gulp": "^3.9.0",
+    "gulp-turbo": "^1.0.17"
+  }
+}
