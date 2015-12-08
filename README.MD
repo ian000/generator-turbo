@@ -29,7 +29,7 @@
     yo turbo
 
   4. 安装工程依赖(如果依赖没有被自动安装)
-    npm install & bower install
+    npm install && bower install
   5. 执行gulp命令
 
     开发模式编译
