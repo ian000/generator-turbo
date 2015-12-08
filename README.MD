@@ -17,15 +17,15 @@
 ```shell
 
   1. 安装依赖:
-    npm i --g yo gulp bower
+    npm i -g yo gulp bower
   2. 安装 generator:
-    npm i --g generator-turbo
+    npm i -g generator-turbo
   3. 运行生成器
 
     #创建项目根目录
 
-    mkdir myPorject
-    cd myPorject
+    mkdir myProject
+    cd myProject
     yo turbo
 
   4. 安装工程依赖(如果依赖没有被自动安装)
