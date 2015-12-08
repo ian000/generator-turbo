@@ -1,0 +1,26 @@
+{
+  "routerPath": "<%= routerPath %>",
+  "approot": "app",
+  "distMode": "dev",
+  "domain": "<%= staticDomain %>",
+  "vhost": "<%= vhost %>",
+  "forceLivereload": "<%= forceLivereload %>",
+  "httpPort": "<%= httpPort %>",
+  "serverProxies": [{
+    "source": "/tech-bs/abc",
+    "target": "http://127.0.0.1:8080/tech-bs/abc",
+    "options": {
+      "headers": {
+        "ABC_HEADER": "abc"
+      }
+    }
+  }, {
+    "source": "/tech-bs/aaa",
+    "target": "http://127.0.0.1:8081/tech-bs/aaa"
+  }],
+  "proxyPort": "<%= proxyPort %>",
+  "proxyRule": [{
+    "pattern": "xxx.b.com/skyfire/ssu/editBefore1",
+    "responder": "/Users/kings/didi/prod/fe-scaffold-v1/app/dev/html/page1.html"
+  }]
+}
