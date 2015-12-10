@@ -6,5 +6,5 @@ require.config
 
 require ['jade','mainTpl'], (jade, tpl)->
   o = document.createElement "div"
-  o.innerHTML = tpl($CONFIG)
+  o.innerHTML = tpl()
   document.body.appendChild o

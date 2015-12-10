@@ -25,7 +25,7 @@ var turboGenerator = yeoman.generators.Base.extend({
         // this.log(this.yeoman);
 
         // replace it with a short and sweet description of your generator
-        this.log(chalk.magenta('You are using yeoman F2E generator!'));
+        this.log(chalk.magenta('You are using yeoman  generator-turbo!'));
 
         var prompts = [
             {
