@@ -21,11 +21,8 @@ var turboGenerator = yeoman.generators.Base.extend({
 
     askFor: function () {
         var done = this.async();
-        // have Yeoman greet the user
-        // this.log(this.yeoman);
 
-        // replace it with a short and sweet description of your generator
-        this.log(chalk.magenta('You are using yeoman  generator-turbo!'));
+        this.log(chalk.magenta('欢迎创建turbo项目， 技术支持QQ群：208517648'));
 
         var prompts = [
             {
@@ -70,7 +67,7 @@ var turboGenerator = yeoman.generators.Base.extend({
             },
             {
                 name: 'routerPath',
-                message: '虚拟目录(需要以/开头)',
+                message: '虚拟目录',
                 default: '/'
             },
             {

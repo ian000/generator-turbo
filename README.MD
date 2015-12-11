@@ -2,6 +2,7 @@
 > 前端工程生成器 for turbo [![](https://img.shields.io/npm/v/gulp-turbo.svg?style=flat)](https://www.npmjs.org/package/gulp-turbo)  
 
 ### 前端工作流 功能说明
+
 > 1. 快速构建前端项目
 > 1. 提供易于开发、调试的开发联调环境，支持预编译语言（jade,stylus,coffee）
 > 1. 提供基于requirejs的实时打包服务。
@@ -11,6 +12,8 @@
 > 1. 提供透明代理（即：线下不存在的资源，直接抓取线上）
 > 1. 提供代理服务（即：htpp代理服务，支持抓包和mapping本地文件，可以用来调试移动端）
 > 1. 提供获取svn的change list工具, 以便用于填写上线单
+>  - 更多请参考 ：https://www.npmjs.org/package/gulp-turbo
+
 
 #### Getting Started
 
@@ -18,18 +21,20 @@
 
   1. 安装依赖:
     npm i -g yo gulp bower
+
   2. 安装 generator:
     npm i -g generator-turbo
+
   3. 运行生成器
 
     #创建项目根目录
-
     mkdir myProject
     cd myProject
     yo turbo
 
   4. 安装工程依赖(如果依赖没有被自动安装)
     npm install && bower install
+
   5. 执行gulp命令
 
     开发模式编译
@@ -38,7 +43,7 @@
     生产模式编译
     gulp dist
 
-    更多命令请参考   https://www.npmjs.org/package/gulp-turbo
+    - 更多命令请参考   https://www.npmjs.org/package/gulp-turbo
 
 ```
 #### 问题列表
