@@ -1,3 +1,3 @@
-require('coffee-script').register();
-var gulp = require('gulp');
-var turbo = require('gulp-turbo');
+var gulp   = require('gulp')
+  , turbo  = require('gulp-turbo')
+  ;
