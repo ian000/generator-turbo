@@ -1,6 +1,6 @@
 {
   "name": "generator-turbo",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "前端工程生成器 for turbo",
   "repository":{
     "type": "git",
@@ -23,7 +23,7 @@
   "author": {
     "name": "ianzhao2010",
     "email": "ianzhao2010@gmail.com",
-    "url": ""
+    "url": "https://github.com/ian000"
   },
   "dependencies": {
     "chalk": "^1.1.1",

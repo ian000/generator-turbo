@@ -17,27 +17,31 @@
 
 #### Getting Started
 
+#### 1. 安装依赖
+
 ```shell
+    npm i -g yo gulp bower generator-turbo
+```
 
-  1. 安装依赖:
-    npm i -g yo gulp bower
+#### 2. 创建项目
 
-  2. 安装 generator:
-    npm i -g generator-turbo
+```
+  1. 运行generator
 
-  3. 运行生成器
-
-    #创建项目根目录
+    # 创建项目根目录
     mkdir myProject
     cd myProject
     yo turbo
 
-  4. 安装工程依赖(如果依赖没有被自动安装)
-    npm install && bower install
+  4. 如果依赖没有被自动安装,请手动安装工程依赖（安装所需时间取决与网络情况）
 
-  5. 执行gulp命令
+    npm i
+```
 
-    开发模式编译
+#### 3. 运行项目 （默认初始化包含demo文件）
+
+```
+    开发模式编译（注意：mac系统监听1024以下端口需要sudo）
     gulp
 
     生产模式编译
@@ -55,7 +59,10 @@
 
 #### change log
 
-    [12.03] -【里程碑】将脚手架包装成npm组件
+    [12.14]
+            1. 文件夹简化，去掉generator层
+            2. 去掉brower i
+            3. 自动npm i
 
 #### TODOS
   1. 子生成器
