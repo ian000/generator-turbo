@@ -9,7 +9,8 @@
   "main": "<%= main %>",
   "author": {
     "name": "<%= authorName %>",
-    "email":"<%= authorEmail %>"
+    "email":"<%= authorEmail %>",
+    "url": "<%= authorUrl %>"
   },
   "license": "MIT",
   "dependencies": {
