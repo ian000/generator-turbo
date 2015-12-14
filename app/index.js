@@ -12,6 +12,7 @@ var turboGenerator = yeoman.generators.Base.extend({
         this.on('end', function () {
             if (!this.options['skip-install']) {
                 this.installDependencies();
+                this.log(chalk.magenta('项目生成完毕，正在自动安装依赖，如果依赖没有被自动安装,请手动 npm i（安装所需时间取决与网络状况，官方npm源可能会慢。）'));
             }
         });
     },
@@ -55,7 +56,7 @@ var turboGenerator = yeoman.generators.Base.extend({
             {
                 name: 'authorName',
                 message: '大侠留名?',
-                default: '一头凶猛的前端工程狮！'
+                default: '一头凶猛的前端攻城狮！'
             },
             {
                 name: 'authorEmail',
@@ -68,23 +69,23 @@ var turboGenerator = yeoman.generators.Base.extend({
                 default: 'https://github.com/404'
             },
             {
-                name: 'routerPath',
-                message: '虚拟目录(配置虚拟路径后,http服务根目录将会改变)',
-                default: '/'
-            },
-            {
                 name: 'staticDomain',
                 message: '线上静态资源服务器域名(domain)',
                 default: 'static.xxxx.com'
             },
             {
+                name: 'routerPath',
+                message: '虚拟目录(配置后,http根目录将改变.例：http://static.xxxx.com/sub ，sub为虚拟目录)',
+                default: '/'
+            },
+            {
                 name: 'vhost',
-                message: '要求与domain指向相同的静态资源池,作为透明代理使用',
-                default: 'http://xxx.aaa.com.cn'
+                message: '透明代理域名（要求与domain指向相同的静态资源池。）',
+                default: 'http://static2.xxxx.com'
             },
             {
                 name: 'forceLivereload',
-                message: '是否开启onsave实时刷新浏览器？',
+                message: '是否开启浏览器实时刷新（onsave）？',
                 default: true
             },
             {
