@@ -6,7 +6,7 @@
     "type": "git",
     "url":"git@github.com:ian000/generator-turbo.git"
   },
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,17 +20,25 @@
     "stylus",
     "scaffold"
   ],
-  "author": "zhaoxin",
-  "license": "ISC",
+  "author": {
+    "name": "ianzhao2010",
+    "email": "ianzhao2010@gmail.com",
+    "url": ""
+  },
   "dependencies": {
     "chalk": "^1.1.1",
     "lodash": "^3.10.1",
     "slugify": "^0.1.1",
     "util": "^0.10.3",
-    "yeoman-generator": "^0.21.1"
+    "yeoman-generator": "~0.16.0"
   },
   "files": [
-    "generators/app",
-    "generators/router"
-  ]
+    "app"
+  ],
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }

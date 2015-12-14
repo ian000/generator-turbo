@@ -8,20 +8,17 @@ var slugify = require('slugify');
 var turboGenerator = yeoman.generators.Base.extend({
     init: function () {
         this.slugify = slugify;
-        this.yeoman = yeoman;
-        this.pkg = require('../../package.json');
-
+        this.pkg = require('../package.json');
         this.on('end', function () {
             if (!this.options['skip-install']) {
-                this.log(chalk.magenta('请安装依赖，然后启动项目! npm install && bower install'));
-                // this.installDependencies();
+                this.installDependencies();
             }
         });
     },
 
     askFor: function () {
         var done = this.async();
-
+        this.log(this.yeoman);
         this.log(chalk.magenta('欢迎创建turbo项目， 技术支持QQ群：208517648'));
 
         var prompts = [
@@ -73,7 +70,7 @@ var turboGenerator = yeoman.generators.Base.extend({
             {
                 name: 'staticDomain',
                 message: '线上静态资源服务器域名',
-                default: '//xxx.bbb.com'
+                default: 'xxx.bbb.com'
             },
             {
                 name: 'vhost',
@@ -94,28 +91,6 @@ var turboGenerator = yeoman.generators.Base.extend({
                 name: 'proxyPort',
                 message: 'http代理端口号',
                 default: "8989"
-            },
-            {
-                type: 'checkbox',
-                name: 'features',
-                message: 'What more would you like?',
-                choices: [
-                    {
-                        name: 'JS: jQuery  (Newest version)',
-                        value: 'includeJquery',
-                        checked: false
-                    },
-                    {
-                        name: 'JS: zepto  (Newest version)',
-                        value: 'includeZepto',
-                        checked: false
-                    },
-                    {
-                        name: 'JS: Bootstrap  (Newest version)',
-                        value: 'includeBootstrap',
-                        checked: false
-                    }
-                ]
             }
         ];
 
@@ -126,16 +101,6 @@ var turboGenerator = yeoman.generators.Base.extend({
                 }
             }
 
-            var features = props.features;
-
-            function hasFeature(feat) {
-                return features.indexOf(feat) !== -1;
-            }
-            // include js
-            this.includeJquery = hasFeature('includeJquery');
-            this.includeZepto = hasFeature('includeZepto');
-            this.includeBootstrap = hasFeature('includeBootstrap');
-
             done();
         }.bind(this));
     },
@@ -144,7 +109,6 @@ var turboGenerator = yeoman.generators.Base.extend({
         this.directory('app', 'app');
         this.copy('gulpfile.js', 'gulpfile.js');
         this.copy('package.json', 'package.json');
-        this.copy('bower.json', 'bower.json');
         this.copy('project-conf.json', 'project-conf.json');
     },
 
