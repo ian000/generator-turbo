@@ -9,9 +9,8 @@
 > 1. 提供http server, 支持mock接口数据功能。
 > 1. 提供json文件自动校验
 > 1. 提供80端口代理、转发功能
+> 1. 提供htpp代理服务（类似 fiddler,charles功能，默认端口8989, 调试移动端必备）
 > 1. 提供透明代理（即：线下不存在的资源，直接抓取线上）
-> 1. 提供代理服务（即：htpp代理服务，支持抓包和mapping本地文件，可以用来调试移动端）
-> 1. 提供获取svn的change list工具, 以便用于填写上线单
 >  - 更多请参考 ：https://www.npmjs.org/package/gulp-turbo
 
 
@@ -58,7 +57,7 @@
 
 #### change log
 
-    [12.14]
+    [12.14] -
             1. 文件夹简化，去掉generator层
             2. 去掉brower i
             3. 自动npm i
