@@ -45,19 +45,25 @@
         #jade模块目录，【注意：将被编译到app/dev/js/tpl下，作为前端模板使用】
         module
 
-          #page1.html的主文件,命名请保持 pageName_body.jade 格式,便于识别。
+          ###
+          # page1.html的主文件,命名请保持 pageName_body.jade 格式,便于识别。
+          # 将被编译到 app/dev/js/tpl/page1_body.js ，用作前端模板。
+          ###
           page1_body.jade
 
-          ##
-          # page1_body.jade的数据源，
+          ###
+          # page1_body.jade的数据源
           # 在jade中可以用 $CONFIG访问到此数据。
           # 在js中同样可以用全局变量 $CONFIG 访问此数据。
           # 此文件查找依赖命名规则，请务必保持pageName_$config.json格式
-          ##
+          ###
           page1_$config.json
 
-          #普通模块，可以被其他模块引用。详见在page1_body.jade中的用法
-          table.jade    
+          ###
+          # 普通模块，可以被其他模块引用。详见在page1_body.jade中的用法
+          # 将被编译到 app/dev/js/tpl/table.js ，用作前端模板。
+          ###
+          table.jade
 
         #将被编译到 app/dev/html下，继承了layout，可以include module下的jade文件
         #page1.jade
