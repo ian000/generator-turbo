@@ -37,6 +37,7 @@
   },
   "files": [
     "app"
+    "page"
   ],
   "engines": {
     "node": ">=0.10.0"

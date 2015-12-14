@@ -1,4 +1,5 @@
 {
+	"getInfo":"http://static.xxxx.com/getInfo",
 	"data":"Hello Turbo !",
 	"info":"this is the first demo !",
 	"tableHead":["tableHead1","tableHead2"]
