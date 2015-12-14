@@ -62,6 +62,7 @@
             1. 文件夹简化，去掉generator层
             2. 去掉brower i
             3. 自动npm i
+            4. 增加测试脚本
 
 #### TODOS
   1. 子生成器
