@@ -11,5 +11,16 @@
 
 > 作为page1_body.jade的数据源
 > 在jade中可以用 $CONFIG访问到此数据。
-> 在js中同样可以用全局变量 $CONFIG 访问此数据。
 > 此文件查找依赖命名规则，请务必保持pageName_$config.json格式
+> 在jade1.jage中，由于使用存在以下两条语句：
+
+```Jade
+
+  script.
+    var $CONFIG = !{JSON.stringify($CONFIG)};
+    var wwwroot = "!{wwwroot}";
+
+```
+
+> 所以，在js中存在全局变量 $CONFIG，同理，也存在全局变量 wwwroot
+> 这在js里面用到绝对路径时方便引用

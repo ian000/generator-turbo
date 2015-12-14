@@ -11,8 +11,8 @@ var turboGenerator = yeoman.generators.Base.extend({
         this.pkg = require('../package.json');
         this.on('end', function () {
             if (!this.options['skip-install']) {
-                this.installDependencies();
-                this.log(chalk.magenta('项目生成完毕，正在自动安装依赖，如果依赖没有被自动安装,请手动 npm i（安装所需时间取决与网络状况，官方npm源可能会慢。）'));
+                this.npmInstall();
+                this.log(chalk.magenta('项目生成完毕，正在自动安装依赖，如果依赖没有被自动安装,请手动 npm i（所需时间取决于网络状况，国外npm源可能会慢。）'));
             }
         });
     },
