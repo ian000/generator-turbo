@@ -27,9 +27,10 @@
 ```
   1. 运行generator
 
-    # 创建项目根目录
-    mkdir myProject
-    cd myProject
+    # 创建项目根目录，并cd进入
+    mkdir myProject && cd $_
+
+    # 创建turbo项目
     yo turbo
 
     # 注意：如果依赖没有被自动安装,请手动 npm i（安装所需时间取决与网络状况）
