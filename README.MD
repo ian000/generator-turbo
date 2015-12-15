@@ -18,8 +18,16 @@
 
 #### 1. 安装依赖
 
+*如果不需要更新，无需每次都安装*
+
+**nodejs安装:**
+    1. [windows](http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html)
+    2. [Linux](https://github.com/DIDI-FE/generator-turbo/wiki/Linux%E4%B8%8BNodejs%E5%AE%89%E8%A3%85)
+
+**全局npm模块安装:**  
+
 ```shell
-    npm i -g yo gulp bower generator-turbo
+    npm i -g yo gulp generator-turbo
 ```
 
 #### 2. 创建项目
@@ -50,7 +58,8 @@
 
 ```
 #### 问题列表
-
+  1. [windows下nodejs安装](http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html)
+  1. [Linux下Nodejs安装](https://github.com/DIDI-FE/generator-turbo/wiki/Linux%E4%B8%8BNodejs%E5%AE%89%E8%A3%85)
   1. [- 目录说明 & 开发约定](https://github.com/ian000/generator-turbo/wiki/%E7%9B%AE%E5%BD%95%E8%AF%B4%E6%98%8E-&-turbo%E5%BC%80%E5%8F%91%E7%BA%A6%E5%AE%9A)
   1. [- 使用turbo，前后端如何联调页面?](https://github.com/ian000/gulp-turbo/wiki/%E4%BD%BF%E7%94%A8turbo%EF%BC%8C%E5%89%8D%E5%90%8E%E7%AB%AF%E5%A6%82%E4%BD%95%E8%81%94%E8%B0%83%E9%A1%B5%E9%9D%A2)
   1. [- 如何设置浏览器代理?](https://github.com/ian000/gulp-turbo/wiki/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BB%A3%E7%90%86)
