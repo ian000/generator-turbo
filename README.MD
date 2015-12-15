@@ -16,15 +16,12 @@
 
 #### Getting Started
 
-#### 1. 安装依赖
+#### nodejs安装
 
-*如果不需要更新，无需每次都安装*
+1. [windows](http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html)
+2. [Linux](https://github.com/DIDI-FE/generator-turbo/wiki/Linux%E4%B8%8BNodejs%E5%AE%89%E8%A3%85)
 
-**nodejs安装:**
-    1. [windows](http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html)
-    2. [Linux](https://github.com/DIDI-FE/generator-turbo/wiki/Linux%E4%B8%8BNodejs%E5%AE%89%E8%A3%85)
-
-**全局npm模块安装:**  
+#### 1. 安装依赖模块
 
 ```shell
     npm i -g yo gulp generator-turbo
