@@ -72,7 +72,9 @@
             4. 增加测试脚本
 
 #### TODOS
+  1. gulp动态组装require_conf.coffee
   1. 子生成器
+
 
 #### Contributors
 <img src="https://avatars3.githubusercontent.com/u/3196171?v=3&s=40">  [赵新](https://github.com/ian000)  

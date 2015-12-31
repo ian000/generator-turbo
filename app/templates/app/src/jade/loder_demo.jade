@@ -1,0 +1,12 @@
+extends layout/main
+
+block head
+	title turbo demo
+	script.
+		var $CONFIG = !{JSON.stringify($CONFIG)};
+		var wwwroot = "!{wwwroot}";
+block body
+block footer
+	script.
+		document.write('<script src="'+ wwwroot + '/js/entry/' + $CONFIG.entryPath +'_loder.js?_t=' + new Date().getTime() +'"><\/script>');
+ 

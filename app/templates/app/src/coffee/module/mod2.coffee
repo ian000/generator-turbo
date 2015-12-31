@@ -1,0 +1,2 @@
+require ()->
+	return 222
