@@ -1,4 +1,4 @@
 require.config
-    baseUrl: 'http://static.xxxx.com/js/'
+    baseUrl: 'http://xxx.bbb.com/tech-bs/js/'
     paths:
         jade: '../vender/runtime'
