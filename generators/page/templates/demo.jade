@@ -1,0 +1,19 @@
+extends layout/main
+
+block head
+	//- // loder control 
+	// build:css css/<%= cssMainWithPath  %>.css 
+	link(rel="stylesheet" type="text/css" href="../css/<%= cssMainWithPath %>.css")
+	// endbuild
+	//- // endloder
+
+	title turbo demo
+	script.
+		var $CONFIG = {
+			
+		}
+block body
+block footer
+	// build:requirejs js/entry/<%= jsEntryWithPath %>.js
+	script(data-main="../js/entry/<%= jsEntryWithPath %>.js" src="../vender/require.js")
+	// endbuild

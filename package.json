@@ -1,10 +1,10 @@
 {
   "name": "generator-turbo",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "前端工程生成器 for turbo",
-  "repository":{
+  "repository": {
     "type": "git",
-    "url":"git@github.com:DIDI-FE/generator-turbo.git"
+    "url": "git@github.com:FE-EE/generator-turbo.git"
   },
   "main": "app/index.js",
   "scripts": {
@@ -30,7 +30,8 @@
     "lodash": "^3.10.1",
     "slugify": "^0.1.1",
     "util": "^0.10.3",
-    "yeoman-generator": "~0.16.0"
+    "yeoman-generator": "^0.20.3",
+    "yosay": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"
@@ -44,8 +45,5 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
-  },
-  "engines": {
-    "node": ">=0.10.0"
   }
 }

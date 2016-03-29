@@ -1,17 +1,19 @@
 'use strict';
 var util = require('util');
 var path = require('path');
+var yosay = require('yosay');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var slugify = require('slugify');
-
 var turboGenerator = yeoman.generators.Base.extend({
     init: function () {
         this.slugify = slugify;
-        this.pkg = require('../package.json');
+        this.pkg = require('../../package.json');
+        
         this.on('end', function () {
+
             if (!this.options['skip-install']) {
-                this.npmInstall();
+                this.installDependencies({ bower: false });
                 this.log(chalk.magenta('项目生成完毕，正在自动安装依赖，如果依赖没有被自动安装,请手动 npm i（所需时间取决于网络状况，国外npm源可能会慢。）'));
             }
         });
@@ -19,8 +21,9 @@ var turboGenerator = yeoman.generators.Base.extend({
 
     askFor: function () {
         var done = this.async();
-        this.log(this.yeoman);
-        this.log(chalk.magenta('欢迎创建turbo项目， 技术支持QQ群：208517648'));
+
+        // this.log(this.yeoman);
+        this.log(yosay(chalk.magenta('欢迎创建turbo项目， 技术支持QQ群：208517648')));
 
         var prompts = [
             {
