@@ -39,6 +39,10 @@
     # 创建turbo项目
     yo turbo
 
+    # 创建turbo 页面及其相关文件
+    yo turbo:page
+
+    
     # 注意：如果依赖没有被自动安装,请手动 npm i（安装所需时间取决与网络状况）
 
 ```
@@ -64,6 +68,11 @@
 
 
 #### change log
+    
+    2016
+    [03-29] page子生成器：快速创建页面以及相关文件
+
+    2015
 
     [12.14] -
             1. 文件夹简化，去掉generator层
@@ -73,7 +82,7 @@
 
 #### TODOS
   1. gulp动态组装require_conf.coffee
-  1. 子生成器
+  
 
 
 #### Contributors
