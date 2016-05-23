@@ -1,10 +1,10 @@
 {
   "name": "generator-turbo",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "前端工程生成器 for turbo",
   "repository": {
     "type": "git",
-    "url": "git@github.com:FE-EE/generator-turbo.git"
+    "url": "git+https://github.com/FE-EE/generator-turbo.git"
   },
   "main": "app/index.js",
   "scripts": {
