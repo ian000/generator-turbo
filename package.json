@@ -1,6 +1,6 @@
 {
   "name": "generator-turbo",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "前端工程生成器 for turbo",
   "repository": {
     "type": "git",
@@ -42,8 +42,5 @@
   ],
   "engines": {
     "node": ">=0.10.0"
-  },
-  "peerDependencies": {
-    "yo": ">=1.0.0"
   }
 }
